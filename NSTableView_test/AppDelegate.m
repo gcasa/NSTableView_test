@@ -9,8 +9,8 @@
 
 @interface AppDelegate ()
 
-@property (strong) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSTableView *table;
+@property IBOutlet NSWindow *window;
+@property IBOutlet NSTableView *table;
 
 @end
 
@@ -53,4 +53,5 @@
     NSArray *array = [NSArray arrayWithObjects:@"One", @"Two", @"Three", nil];
     return [array objectAtIndex: row];
 }
+
 @end
