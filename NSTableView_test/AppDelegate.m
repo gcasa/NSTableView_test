@@ -9,12 +9,37 @@
 
 @interface AppDelegate ()
 
-@property IBOutlet NSWindow *window;
-@property IBOutlet NSTableView *table;
+@property (retain) IBOutlet NSWindow *window;
+@property (retain) IBOutlet NSTableView *table;
 
 @end
 
 @implementation AppDelegate
+
+@synthesize window;
+@synthesize table;
+
+/*
+- (void) setWindow: (NSWindow *)w
+{
+  window = w;
+}
+
+- (NSWindow *) window
+{
+  return self.window;
+}
+
+- (void) setTable: (NSTableView *)t
+{
+  _table = t;
+}
+
+- (NSTableView *) table
+{
+  return self.table;
+}
+*/
 
 - (void) handleNotification: (NSNotification *)n
 {
@@ -48,7 +73,7 @@
     return 3;
 }
 
-- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(nullable NSTableColumn *)tableColumn row:(NSInteger)row
+- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
     NSArray *array = [NSArray arrayWithObjects:@"One", @"Two", @"Three", nil];
     return [array objectAtIndex: row];
