@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A6253AE0-A473-C505-707B-6994C6784A40}") = "NSTableView_test", "NSTableView_test\NSTableView_test.vcxproj", "{1BD299DF-FE39-3D0D-5383-22C7C99BB2D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BD299DF-FE39-3D0D-5383-22C7C99BB2D5}.Release|x64.Build.0 = Release|x64
+		{1BD299DF-FE39-3D0D-5383-22C7C99BB2D5}.Release|x64.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGoals) = postSolution
+		SolutionGuid = E6662309-5613-B101-47E3-3A9D051BC483
+	EndGlobalSection
+EndGlobal
