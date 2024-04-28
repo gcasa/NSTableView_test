@@ -55,6 +55,9 @@
                                              selector:@selector(handleNotification:)
                                                  name:NSTableViewSelectionDidChangeNotification
                                                object:nil];
+    
+    NSTableRowView *rv = [self.table rowViewAtRow: 0 makeIfNecessary:NO];
+    NSLog(@"rv = %@, subviews = %@", rv, rv.subviews);
 }
 
 
